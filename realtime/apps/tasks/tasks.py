@@ -1,6 +1,10 @@
 import redis
+import time
+
 
 def publish(name , message):
+    time.sleep(10)
+
     comment_json = {
         'comment': 1,
         'user_name': name , 
